@@ -98,7 +98,7 @@ function zetzer (trees, options) {
       })[0];
 
       if (path === undefined) {
-        throw new Error('Couldn\'t find a matching file for', name);
+        throw new Error('Couldn\'t find a matching file for ' + name);
       }
 
       return join_paths(tree.root, path);
